@@ -1,0 +1,175 @@
+//forms, buttons, dialogs etc.
+.site-nav {
+    background-color: #fff;
+    padding: 19px 0;
+    border-bottom: 4px solid #7f7f7f;
+    img {
+        margin-top: (33px-65px)/2;
+    }
+    ul {
+        &:extend(.ul-unstyled);
+        float: right;
+        margin-top: 8px;
+        li {
+            display: inline-block;
+            margin-left: 15px;
+            a {
+                .transition();
+                display: block;
+                color: #c5c5c5;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: none;
+                line-height: 1px;
+                &.active {
+                    color: @green;
+                }
+                &:hover {
+                    color: @green;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+//==RESPONSIVE==
+.main-nav-trigger{
+    display: none;
+    font-size: 45px;
+    color: @gray;
+    float: right;
+    line-height: 1;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+    &:hover {
+        color: @green;
+    }
+}
+@media (max-width:992px) {
+    .main-logo{
+    float: left;
+    }
+    .main-nav-trigger{
+        display: block;
+    }
+    .site-nav{
+        position: relative;
+        float: none;
+    }
+    .site-nav  ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; 
+        background-color: #fff;
+        opacity: 0.9;
+        margin: 0;
+        li {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 4px solid @light-gray;
+            a{
+                display: inline-block;
+                
+            }
+        }
+    }
+}
+
+
+.hire-button {
+    .transition();
+    height: 40px;
+    width: 140px;
+    display: block;
+    background-color: #3f8dbf;
+    border-bottom: 4px solid #3678a3;
+    border-radius: 5px;
+    margin: 57px auto 80px auto;
+    color: #fff;
+    padding: 6px 0 0 12px;
+    font-size: 1.067em;
+    position: relative;
+    div {
+        display: inline-block;
+        float: left;
+    }
+    & >:last-child {
+        position: absolute;
+        top: 2px;
+        left: 50px;
+    }
+    &:hover {
+    	color: #fff;
+        background-color: #2b5f80;
+        border-color: #204760;
+    }
+}
+
+// FORM
+.form-group {
+    margin-top: 20px;
+    ::-webkit-input-placeholder {
+        opacity: 1; transition: opacity 0.3s ease;
+        color: #a1a1a1;
+        font-family: 'Lato-Black';
+        font-weight: 600;
+        font-size: 0.800em;
+    }
+    ::-moz-placeholder {
+        opacity: 1; transition: opacity 0.3s ease;
+        color: #a1a1a1;
+        font-family: 'Lato-Black';
+        font-weight: 600;
+        font-size: 0.800em;
+    }
+    /* Firefox 19+ */
+    :-moz-placeholder {
+        opacity: 1; transition: opacity 0.3s ease;
+        color: #a1a1a1;
+        font-family: 'Lato-Black';
+        font-weight: 600;
+        font-size: 0.800em;
+    }
+    /* Firefox 18- */
+    :-ms-input-placeholder {
+        opacity: 1; transition: opacity 0.3s ease;
+        color: #a1a1a1;
+        font-family: 'Lato-Black';
+        font-weight: 600;
+        font-size: 0.800em;
+    }
+    :focus::-webkit-input-placeholder {
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    :focus::-moz-placeholder {
+        opacity: 0; transition: opacity 0.3s ease;
+    }
+    :focus:-moz-placeholder {
+        opacity: 0; transition: opacity 0.3s ease;
+    }
+    :focus:-ms-input-placeholder {
+        opacity: 0; transition: opacity 0.3s ease;
+    }
+    textarea{
+    	resize:none;
+    	height: 210px;
+	    padding-top: 15px;
+    }
+}
+
+.form-control {
+    background-color: rgba(152, 152, 152, 0.11);
+    border-radius: 0;
+    border: 0;
+    font-family: 'Lato-Black';
+    font-weight: 600;
+    color: #Fff;
+    margin-top: 20px;
+}
+
