@@ -2,6 +2,7 @@
 <html>
 
 <head lang="en">
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,20 +31,19 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="site-nav">
+    <header class="site-header" id="site-header">
+        <nav class="site-nav fixed">
             <div class="container">
                 <img src="assets/img/logo.png" alt="Chelnokov-Photo" class="main-logo">
                 <span class="main-nav-trigger trigger-nav">
                  &#9776
                 </span>
                 <ul class="trigger-victim">
-                    <li><a href="#!" class="active">HOME</a></li>
-                    <li><a href="#!">ABOUT</a></li>
-                    <li><a href="#!">PORTFOLIO</a></li>
-                    <li><a href="#!">REVIEWS</a></li>
-                    <li><a href="#!">FEATURES</a></li>
-                    <li><a href="#!">CONTACT</a></li>
+                    <li><a href="#site-header" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="#contacts">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,7 +72,7 @@
             </div>
         </div>
     </header>
-    <section class="stn-about">
+    <section class="stn-about" id="about">
         <div>
             <h2 class="container">A little about me</h2>
         </div>
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="stn-portfolio">
+    <section class="stn-portfolio" id="portfolio">
         <div>
             <h2>
               <div class="container">My portfolio</div>
@@ -146,7 +146,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="stn-reviews">
+    <section class="stn-reviews" id="reviews">
         <div>
             <h2 class="container">Review</h2>
         </div>
@@ -155,15 +155,15 @@
                 <div class="col-lg-6">
                     <div class="reviewer-photo-1"></div>
                     <span class="review-date">24 MARCH 2016</span>
-                    <div>
+                    <div class="rev-title">
                         <h4>Дарья Чернова</h4>
-                        <span>Алексей фотографировал нашу свадьбу . Фотографии получились изумительные. Атмосфера при работе была отличная  ☺☺☺☺Теперь смотришь свадебный альбом и любуешься красотой фотографий и вспоминаешь наш самый счастливый день. Мы не сколько не пожалели, что выбрали именно Алексея! Отличный профессионал .Спасибо огромное за работу!!! Хотим теперь семейную фотосессию, когда будет малыш ))))</span>
+                        <span >Алексей фотографировал нашу свадьбу . Фотографии получились изумительные. Атмосфера при работе была отличная  ☺☺☺☺Теперь смотришь свадебный альбом и любуешься красотой фотографий и вспоминаешь наш самый счастливый день. Мы не сколько не пожалели, что выбрали именно Алексея! Отличный профессионал .Спасибо огромное за работу!!! Хотим теперь семейную фотосессию, когда будет малыш ))))</span>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="reviewer-photo-2"></div>
                     <span class="review-date">8 AUGUST 2015</span>
-                    <div>
+                    <div class="rev-title">
                         <h4>Анастасия Кошевая</h4>
                         <span>От свадебных фотографий я просто балдею, они передают именно то состояние и эмоции которые были в тот день. Леша очень общительный и веселый молодой человек. Как фотограф он крут, придумывал красивые позы для нас и выбирал чудесные виды, прислушивался к нашим желанием, ну и конечно делал много живых и эмоциональных фото. Спасибо за то, что я всегда могу погрузиться в этот день.</span>
                     </div>
@@ -173,7 +173,7 @@
                 <div class="col-lg-6">
                     <div class="reviewer-photo-3"></div>
                     <span class="review-date">22 JULY 2016</span>
-                    <div>
+                    <div class="rev-title">
                         <h4>Анастасия Пичугина</h4>
                         <span>Спасибо большое Алексею за фото с нашей свадьбы, Они очень яркие и неожиданные, живые какие то. Мы так на это надеялись. Ты воплотил нашу мечту. Мы надеялись что ты сделаешь именно так. Очень приятно было их так скоро получить))) Мы их с нетерпением ждали. Спасибо что мы можем еще раз посмотреть на НАШ день!</span>
                     </div>
@@ -181,7 +181,7 @@
                 <div class="col-lg-6">
                     <div class="reviewer-photo-4"></div>
                     <span class="review-date">17 JULY 2016</span>
-                    <div>
+                    <div class="rev-title">
                         <h4>Александр Вдовин</h4>
                         <span>Лёха спасибо за замечательные фотографии! Большое спасибо за профессионализм! Ты как режиссер командовал процессом!!! Может однажды ты снимешь фильм, развивай своё творчество, успехов тебе и удачи!</span>
                     </div>
@@ -189,7 +189,7 @@
             </div>
         </div>
     </section>
-    <section class="stn-contact">
+    <section class="stn-contact" id="contacts">
         <div>
             <h2 class="container">Contact</h2>
         </div>

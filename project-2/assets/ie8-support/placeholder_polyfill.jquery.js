@@ -11,6 +11,11 @@
 * http://www.gnu.org/licenses/gpl.html
 *
 */
+(function($) {
+    'use strict';
+
+    $(document).ready(function() {
+
 
 (function($) {
     var debug = false,
@@ -220,4 +225,7 @@
         }
         $('input[placeholder], textarea[placeholder]').placeHolder();
     });
+}(jQuery));
+    }); //end ready
+
 }(jQuery));

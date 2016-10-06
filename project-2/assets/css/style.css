@@ -1856,8 +1856,9 @@ select[multiple].input-lg {
   height: 13px;
 }
 .site-nav {
-  background-color: #fff;
+  background-color: #eee;
   padding: 19px 0;
+  z-index: 20 ;
   border-bottom: 4px solid #7f7f7f;
 }
 .site-nav img {
@@ -2227,10 +2228,16 @@ button {
 }
 .stn-portfolio .swiper-1-slide img {
   text-align: center;
-  height: 300px;
-  line-height: 300px;
+  width: 100%;
+  height: auto;
   vertical-align: middle;
   border-bottom: 4px solid #2d2d2d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 800px;
+      -ms-flex-preferred-size: 800px;
+          flex-basis: 800px;
 }
 .stn-portfolio .swiper-2-container {
   margin-top: 60px;
@@ -2250,10 +2257,16 @@ button {
 }
 .stn-portfolio .swiper-2-slide img {
   text-align: center;
-  height: 300px;
-  line-height: 300px;
+  width: 100%;
+  height: auto;
   vertical-align: middle;
   border-bottom: 4px solid #2d2d2d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 800px;
+      -ms-flex-preferred-size: 800px;
+          flex-basis: 800px;
 }
 .stn-reviews {
   background-color: #f0f0f0;
@@ -2303,10 +2316,13 @@ button {
   text-transform: uppercase;
   padding: 25px 0 0 28px;
 }
-.stn-reviews .col-lg-6 :last-child > span {
+.stn-reviews .col-lg-6v > :last-child > span {
   display: block;
   padding: 0 5px 25px 28px;
   border-bottom: 4px solid #e4e4e4;
+}
+.stn-reviews .rev-title {
+  padding: 0 30px 30px 30px;
 }
 .stn-reviews .reviewer-photo-1 {
   background-image: url('../img/reviewers1.jpg');

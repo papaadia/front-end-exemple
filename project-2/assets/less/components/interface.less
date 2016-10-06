@@ -1,7 +1,9 @@
 //forms, buttons, dialogs etc.
+
 .site-nav {
-    background-color: #fff;
+    background-color: #eee;
     padding: 19px 0;
+    z-index: 20 ;
     border-bottom: 4px solid #7f7f7f;
     img {
         margin-top: (33px-65px)/2;
@@ -32,9 +34,10 @@
         }
     }
 }
+    //==FOR STICKY MENU
 
 //==RESPONSIVE==
-.main-nav-trigger{
+.main-nav-trigger {
     display: none;
     font-size: 45px;
     color: @gray;
@@ -46,23 +49,24 @@
         color: @green;
     }
 }
+
 @media (max-width:992px) {
-    .main-logo{
-    float: left;
+    .main-logo {
+        float: left;
     }
-    .main-nav-trigger{
+    .main-nav-trigger {
         display: block;
     }
-    .site-nav{
+    .site-nav {
         position: relative;
         float: none;
     }
-    .site-nav  ul {
+    .site-nav ul {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%; 
+        width: 100%;
         background-color: #fff;
         opacity: 0.9;
         margin: 0;
@@ -73,14 +77,12 @@
             margin: 0;
             padding: 10px;
             border-bottom: 4px solid @light-gray;
-            a{
+            a {
                 display: inline-block;
-                
             }
         }
     }
 }
-
 
 .hire-button {
     .transition();
@@ -105,7 +107,7 @@
         left: 50px;
     }
     &:hover {
-    	color: #fff;
+        color: #fff;
         background-color: #2b5f80;
         border-color: #204760;
     }
@@ -115,14 +117,16 @@
 .form-group {
     margin-top: 20px;
     ::-webkit-input-placeholder {
-        opacity: 1; transition: opacity 0.3s ease;
+        opacity: 1;
+        transition: opacity 0.3s ease;
         color: #a1a1a1;
         font-family: 'Lato-Black';
         font-weight: 600;
         font-size: 0.800em;
     }
     ::-moz-placeholder {
-        opacity: 1; transition: opacity 0.3s ease;
+        opacity: 1;
+        transition: opacity 0.3s ease;
         color: #a1a1a1;
         font-family: 'Lato-Black';
         font-weight: 600;
@@ -130,7 +134,8 @@
     }
     /* Firefox 19+ */
     :-moz-placeholder {
-        opacity: 1; transition: opacity 0.3s ease;
+        opacity: 1;
+        transition: opacity 0.3s ease;
         color: #a1a1a1;
         font-family: 'Lato-Black';
         font-weight: 600;
@@ -138,28 +143,33 @@
     }
     /* Firefox 18- */
     :-ms-input-placeholder {
-        opacity: 1; transition: opacity 0.3s ease;
+        opacity: 1;
+        transition: opacity 0.3s ease;
         color: #a1a1a1;
         font-family: 'Lato-Black';
         font-weight: 600;
         font-size: 0.800em;
     }
     :focus::-webkit-input-placeholder {
-      opacity: 0; transition: opacity 0.3s ease;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
     :focus::-moz-placeholder {
-        opacity: 0; transition: opacity 0.3s ease;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
     :focus:-moz-placeholder {
-        opacity: 0; transition: opacity 0.3s ease;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
     :focus:-ms-input-placeholder {
-        opacity: 0; transition: opacity 0.3s ease;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
-    textarea{
-    	resize:none;
-    	height: 210px;
-	    padding-top: 15px;
+    textarea {
+        resize: none;
+        height: 210px;
+        padding-top: 15px;
     }
 }
 
@@ -172,4 +182,3 @@
     color: #Fff;
     margin-top: 20px;
 }
-
